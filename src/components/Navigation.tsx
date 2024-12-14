@@ -11,9 +11,9 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="text-xl font-semibold">
+        <Link to="/" className="text-xl font-semibold hover:text-primary transition-colors">
           RiVO
-        </span>
+        </Link>
         
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/pricing" className="text-secondary hover:text-primary transition-colors">
