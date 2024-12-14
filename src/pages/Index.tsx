@@ -40,7 +40,7 @@ const Index = () => {
           <div className="relative mt-16">
             <div className="flex justify-center">
               <img
-                src="https://antimetal.com/images/hero/preview.png"
+                src="https://i.ibb.co/jJZyxSj/newrivo.webp"
                 alt="Hero"
                 className="rounded-3xl shadow-2xl max-w-[90%] w-auto h-auto"
               />
