@@ -23,7 +23,10 @@ const Index = () => {
               </span>
             </h1>
             <p className="mx-auto max-w-2xl text-lg text-secondary mb-8">
-              Experience banking reimagined. Simple, secure, and designed for the modern world.
+              RiVO is a cutting-edge lead generation service designed to simplify and transform how businesses, professionals, and job seekers connect and grow on LinkedIn.
+            </p>
+            <p className="mx-auto max-w-2xl text-lg text-secondary mb-8">
+              Whether you're a sales team looking to boost conversions, a small business expanding your client base, or a professional pursuing career advancement, RiVO is here to help you define your target market, connect, engage, and thrive in today's digital world.
             </p>
             <div className="flex justify-center gap-4">
               <button className="px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors">
