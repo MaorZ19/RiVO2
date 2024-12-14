@@ -10,7 +10,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Main content with top padding for navigation */}
+      {/* Hero Section */}
       <main className="pt-16">
         {/* Hero Section */}
         <section className="relative overflow-hidden px-6 lg:px-8 py-24 sm:py-32">
@@ -74,6 +74,7 @@ const Index = () => {
                   title: "Analytics and Advance Reporting",
                   description: "Access BI-driven analytics and detailed reporting to track lead performance, engagement metrics, and campaign ROI",
                   icon: "📊",
+                  className: "md:col-start-2",
                 },
                 {
                   title: "Strategy Feedback",
@@ -83,7 +84,7 @@ const Index = () => {
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="p-6 rounded-2xl bg-background border border-border hover:border-accent transition-colors"
+                  className={`p-6 rounded-2xl bg-background border border-border hover:border-accent transition-colors ${feature.className || ''}`}
                 >
                   <div className="text-4xl mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
