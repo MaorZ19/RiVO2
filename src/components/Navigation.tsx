@@ -1,5 +1,11 @@
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./ui/tooltip";
 
 const Navigation = () => {
   return (
@@ -22,12 +28,31 @@ const Navigation = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Button variant="ghost" className="hidden md:inline-flex">
-            Sign In
-          </Button>
-          <Button className="text-white">
-            Get Started
-          </Button>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button variant="ghost" className="hidden md:inline-flex">
+                  Sign In
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Coming Soon!</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button className="text-white">
+                  Get Started
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Coming Soon!</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
       </div>
     </nav>
