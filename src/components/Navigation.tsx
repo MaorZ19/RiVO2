@@ -2,9 +2,9 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import {
   Tooltip,
-  TooltipContent,
   TooltipProvider,
   TooltipTrigger,
+  TooltipContent,
 } from "./ui/tooltip";
 
 const Navigation = () => {
@@ -22,9 +22,9 @@ const Navigation = () => {
           <Link to="/pricing" className="text-secondary hover:text-primary transition-colors">
             Pricing
           </Link>
-          <span className="text-secondary cursor-default">
+          <Link to="/about" className="text-secondary hover:text-primary transition-colors">
             About
-          </span>
+          </Link>
         </div>
 
         <div className="flex items-center space-x-4">
