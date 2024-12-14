@@ -74,12 +74,13 @@ const Index = () => {
                   title: "Analytics and Advance Reporting",
                   description: "Access BI-driven analytics and detailed reporting to track lead performance, engagement metrics, and campaign ROI",
                   icon: "📊",
-                  className: "md:col-start-2",
+                  className: "md:col-span-1 md:col-start-2",
                 },
                 {
                   title: "Strategy Feedback",
                   description: "Get expert insights and recommendations to optimize your lead generation strategy",
                   icon: "💡",
+                  className: "md:col-span-1 md:col-start-2",
                 },
               ].map((feature, index) => (
                 <div
