@@ -1,8 +1,7 @@
-import { ArrowRight, Check, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 
 const Index = () => {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
@@ -124,10 +123,6 @@ const Index = () => {
                   answer: "While results vary based on your goals and industry, most clients see a significant increase in connections, engagement, and potential leads within the first few weeks.",
                 },
                 {
-                  question: "Is my LinkedIn account secure with Rivo?",
-                  answer: "Yes. We prioritize account safety and comply with LinkedIn's guidelines, ensuring all actions are performed responsibly.",
-                },
-                {
                   question: "How do I get started with Rivo?",
                   answer: "Simply sign up through our website, choose a package that fits your needs, and our team will guide you through the onboarding process.",
                 },
@@ -169,12 +164,10 @@ const Index = () => {
               href="mailto:info@rivo.co.il"
               className="inline-block px-8 py-4 bg-accent text-primary rounded-full font-semibold hover:bg-accent/90 transition-colors"
             >
-              Create Account
+              Join Us
             </a>
           </div>
         </section>
-
-      <Footer />
     </div>
   );
 };
