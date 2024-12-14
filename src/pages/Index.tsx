@@ -16,10 +16,10 @@ const Index = () => {
         <section className="relative overflow-hidden px-6 lg:px-8 py-24 sm:py-32">
           <div className="mx-auto max-w-7xl text-center">
             <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-primary mb-6">
-              Change the bank account
+              Lead to your
               <br />
-              <span className="bg-gradient-to-r from-[#9EE755] to-[#CFDD3C] bg-clip-text text-transparent">
-                you use
+              <span className="bg-gradient-to-r from-[#0EA5E9] to-[#33C3F0] bg-clip-text text-transparent">
+                Target Market
               </span>
             </h1>
             <p className="mx-auto max-w-2xl text-lg text-secondary mb-8">
