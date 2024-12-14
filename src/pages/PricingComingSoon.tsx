@@ -24,7 +24,7 @@ const PricingComingSoon = () => {
           <div className="p-6 rounded-2xl bg-background border border-border hover:border-accent transition-colors">
             <Clock className="w-12 h-12 text-accent mb-4 mx-auto" />
             <h3 className="text-xl font-semibold mb-2">Launch Date</h3>
-            <p className="text-secondary">Coming Q2 2024</p>
+            <p className="text-secondary">Coming Q1 2025</p>
           </div>
           <div className="p-6 rounded-2xl bg-background border border-border hover:border-accent transition-colors">
             <Gift className="w-12 h-12 text-accent mb-4 mx-auto" />
