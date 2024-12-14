@@ -56,18 +56,28 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Secure Transactions",
-                  description: "Bank-grade encryption for all your transactions",
-                  icon: "🔒",
+                  title: "Targeted Leads According to Profile",
+                  description: "Filter leads based on job title, company type, country, and more with monthly optimization through A/B testing",
+                  icon: "🎯",
                 },
                 {
-                  title: "Real-time Updates",
-                  description: "Get instant notifications for all account activities",
+                  title: "Easy and Fast to Use",
+                  description: "Plug & Play system with advanced management services and cutting-edge technology",
                   icon: "⚡",
                 },
                 {
-                  title: "Smart Savings",
-                  description: "AI-powered insights to help you save more",
+                  title: "Availability and Accessibility",
+                  description: "Cloud-based technology ensures 24/7 operations from anywhere, unaffected by weekends, holidays, etc",
+                  icon: "🌐",
+                },
+                {
+                  title: "Analytics and Advance Reporting",
+                  description: "Access BI-driven analytics and detailed reporting to track lead performance, engagement metrics, and campaign ROI",
+                  icon: "📊",
+                },
+                {
+                  title: "Strategy Feedback",
+                  description: "Get expert insights and recommendations to optimize your lead generation strategy",
                   icon: "💡",
                 },
               ].map((feature, index) => (
