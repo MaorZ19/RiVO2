@@ -11,27 +11,27 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="text-xl font-semibold">
+        <span className="text-xl font-semibold">
           RiVO
-        </Link>
+        </span>
         
         <div className="hidden md:flex items-center space-x-8">
-          <Link to="/features" className="text-secondary hover:text-primary transition-colors">
+          <Link to="/pricing" className="text-secondary hover:text-primary transition-colors">
             Features
           </Link>
           <Link to="/pricing" className="text-secondary hover:text-primary transition-colors">
             Pricing
           </Link>
-          <Link to="/about" className="text-secondary hover:text-primary transition-colors">
+          <span className="text-secondary cursor-default">
             About
-          </Link>
+          </span>
         </div>
 
         <div className="flex items-center space-x-4">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button variant="ghost" className="hidden md:inline-flex">
+                <Button variant="ghost" className="hidden md:inline-flex cursor-default">
                   Sign In
                 </Button>
               </TooltipTrigger>
@@ -44,12 +44,15 @@ const Navigation = () => {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button className="text-white">
+                <a 
+                  href="mailto:info@rivo.co.il" 
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 h-10 px-4 py-2 bg-primary text-white hover:bg-primary/90"
+                >
                   Get Started
-                </Button>
+                </a>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Coming Soon!</p>
+                <p>Contact us!</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

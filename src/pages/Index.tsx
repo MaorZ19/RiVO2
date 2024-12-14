@@ -27,12 +27,18 @@ const Index = () => {
               Whether you're a sales team looking to boost conversions, a small business expanding your client base, or a professional pursuing career advancement, RiVO is here to help you define your target market, connect, engage, and thrive in today's digital world.
             </p>
             <div className="flex justify-center gap-4">
-              <button className="px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors">
+              <a 
+                href="mailto:info@rivo.co.il"
+                className="px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors"
+              >
                 Get Started
-              </button>
-              <button className="px-6 py-3 glass rounded-full hover:bg-white/20 transition-colors flex items-center gap-2">
+              </a>
+              <Link 
+                to="/about" 
+                className="px-6 py-3 glass rounded-full hover:bg-white/20 transition-colors flex items-center gap-2"
+              >
                 Learn More <ArrowRight className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -46,6 +52,7 @@ const Index = () => {
               />
             </div>
           </div>
+
         </section>
 
       {/* Features Section */}
@@ -157,9 +164,12 @@ const Index = () => {
             <p className="text-white/80 mb-8 max-w-2xl mx-auto">
               Your journey to smarter LinkedIn lead generation begins here.
             </p>
-            <button className="px-8 py-4 bg-accent text-primary rounded-full font-semibold hover:bg-accent/90 transition-colors">
+            <a 
+              href="mailto:info@rivo.co.il"
+              className="inline-block px-8 py-4 bg-accent text-primary rounded-full font-semibold hover:bg-accent/90 transition-colors"
+            >
               Create Account
-            </button>
+            </a>
           </div>
         </section>
 
