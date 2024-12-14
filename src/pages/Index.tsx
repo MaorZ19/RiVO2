@@ -72,18 +72,16 @@ const Index = () => {
                 title: "Analytics and Advance Reporting",
                 description: "Access BI-driven analytics and detailed reporting to track lead performance, engagement metrics, and campaign ROI",
                 icon: "📊",
-                className: "md:col-span-3 md:col-start-1 lg:col-span-1 lg:col-start-2",
               },
               {
                 title: "Strategy Feedback",
                 description: "Get expert insights and recommendations to optimize your lead generation strategy",
                 icon: "💡",
-                className: "md:col-span-3 md:col-start-1 lg:col-span-1 lg:col-start-2",
               },
             ].map((feature, index) => (
               <div
                 key={index}
-                className={`p-6 rounded-2xl bg-background border border-border hover:border-accent transition-colors ${feature.className || ''}`}
+                className={`p-6 rounded-2xl bg-background border border-border hover:border-accent transition-colors`}
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
