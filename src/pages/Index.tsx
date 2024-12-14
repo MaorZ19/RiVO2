@@ -48,6 +48,7 @@ const Index = () => {
           </div>
         </section>
 
+      {/* Features Section */}
       <section className="py-24 bg-surface px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-3xl font-bold text-center mb-16">Features designed for you</h2>
@@ -99,16 +100,28 @@ const Index = () => {
             <div className="space-y-4">
               {[
                 {
-                  question: "How secure is my data?",
-                  answer: "We use bank-level encryption to protect all your data and transactions.",
+                  question: "How does Rivo help with LinkedIn lead generation?",
+                  answer: "Rivo uses advanced AI tools to identify, engage, and manage potential leads on LinkedIn. From profile optimization to personalized messaging, we ensure a seamless lead generation process.",
                 },
                 {
-                  question: "What are the fees?",
-                  answer: "We believe in transparent pricing with no hidden fees.",
+                  question: "Is Rivo suitable for my business size and industry?",
+                  answer: "Yes! Our services are tailored to suit businesses of all sizes and industries. We specialize in B2B solutions but can adapt to any professional need.",
                 },
                 {
-                  question: "How do I get started?",
-                  answer: "Download our app and follow the simple registration process.",
+                  question: "Can I customize the messages sent to leads?",
+                  answer: "Absolutely! With Rivo, you can personalize your messages to align with your brand voice and target audience.",
+                },
+                {
+                  question: "What kind of results can I expect?",
+                  answer: "While results vary based on your goals and industry, most clients see a significant increase in connections, engagement, and potential leads within the first few weeks.",
+                },
+                {
+                  question: "Is my LinkedIn account secure with Rivo?",
+                  answer: "Yes. We prioritize account safety and comply with LinkedIn's guidelines, ensuring all actions are performed responsibly.",
+                },
+                {
+                  question: "How do I get started with Rivo?",
+                  answer: "Simply sign up through our website, choose a package that fits your needs, and our team will guide you through the onboarding process.",
                 },
               ].map((faq, index) => (
                 <div
