@@ -11,8 +11,6 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <main className="pt-16">
-        {/* Hero Section */}
         <section className="relative overflow-hidden px-6 lg:px-8 py-24 sm:py-32">
           <div className="mx-auto max-w-7xl text-center">
             <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-primary mb-6">
@@ -50,53 +48,53 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="py-24 bg-surface px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
-            <h2 className="text-3xl font-bold text-center mb-16">Features designed for you</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Targeted Leads According to Profile",
-                  description: "Filter leads based on job title, company type, country, and more with monthly optimization through A/B testing",
-                  icon: "🎯",
-                },
-                {
-                  title: "Easy and Fast to Use",
-                  description: "Plug & Play system with advanced management services and cutting-edge technology",
-                  icon: "⚡",
-                },
-                {
-                  title: "Availability and Accessibility",
-                  description: "Cloud-based technology ensures 24/7 operations from anywhere, unaffected by weekends, holidays, etc",
-                  icon: "🌐",
-                },
-                {
-                  title: "Analytics and Advance Reporting",
-                  description: "Access BI-driven analytics and detailed reporting to track lead performance, engagement metrics, and campaign ROI",
-                  icon: "📊",
-                  className: "md:col-span-1 md:col-start-2",
-                },
-                {
-                  title: "Strategy Feedback",
-                  description: "Get expert insights and recommendations to optimize your lead generation strategy",
-                  icon: "💡",
-                  className: "md:col-span-1 md:col-start-2",
-                },
-              ].map((feature, index) => (
-                <div
-                  key={index}
-                  className={`p-6 rounded-2xl bg-background border border-border hover:border-accent transition-colors ${feature.className || ''}`}
-                >
-                  <div className="text-4xl mb-4">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-secondary">{feature.description}</p>
-                </div>
-              ))}
-            </div>
+      <section className="py-24 bg-surface px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-3xl font-bold text-center mb-16">Features designed for you</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Targeted Leads According to Profile",
+                description: "Filter leads based on job title, company type, country, and more with monthly optimization through A/B testing",
+                icon: "🎯",
+              },
+              {
+                title: "Easy and Fast to Use",
+                description: "Plug & Play system with advanced management services and cutting-edge technology",
+                icon: "⚡",
+              },
+              {
+                title: "Availability and Accessibility",
+                description: "Cloud-based technology ensures 24/7 operations from anywhere, unaffected by weekends, holidays, etc",
+                icon: "🌐",
+              },
+              {
+                title: "Analytics and Advance Reporting",
+                description: "Access BI-driven analytics and detailed reporting to track lead performance, engagement metrics, and campaign ROI",
+                icon: "📊",
+                className: "md:col-span-3 md:col-start-1 lg:col-span-1 lg:col-start-2",
+              },
+              {
+                title: "Strategy Feedback",
+                description: "Get expert insights and recommendations to optimize your lead generation strategy",
+                icon: "💡",
+                className: "md:col-span-3 md:col-start-1 lg:col-span-1 lg:col-start-2",
+              },
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className={`p-6 rounded-2xl bg-background border border-border hover:border-accent transition-colors ${feature.className || ''}`}
+              >
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-secondary">{feature.description}</p>
+              </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* FAQ Section */}
+      {/* FAQ Section */}
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold text-center mb-16">Frequently Asked Questions</h2>
@@ -141,7 +139,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+      {/* CTA Section */}
         <section className="py-24 bg-primary text-white px-6 lg:px-8">
           <div className="mx-auto max-w-7xl text-center">
             <h2 className="text-3xl sm:text-5xl font-bold mb-8">Ready to get started?</h2>
@@ -153,7 +151,6 @@ const Index = () => {
             </button>
           </div>
         </section>
-      </main>
 
       <Footer />
     </div>
